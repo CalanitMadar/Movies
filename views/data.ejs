@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script src="../routes/registration.js"></script>
+    </head>
+    <body>
+
+        <form action="/users/getdata" method="POST">
+
+
+            <input type="submit" value="Save">
+        </form>
+
+
+
+        <form action="/login" method="post">
+            <div>
+                <label >username</label>
+                <input name="username" id="username" placeholder="please enter your username"  required>
+            </div>
+
+            <div>
+                <label for="password">password</label>
+                <input type="password" id="password" name="password" placeholder="please enter password" required>
+            </div>
+
+
+            <div>
+                <label><a href="/registration" >registeration</a></label>
+            </div>
+
+            <input type="submit" value="login">
+        </form>
+        <h2><%=errorMessage%></h2>
+
+    </body>
+</html>
+

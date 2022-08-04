@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <form action="/savaDatabase/<%=obj.oldUsername%>" method="post">
+            <div>
+                <label >username</label>
+                <input name="username" id="username" placeholder="please enter your username" value="<%=obj.username%>"  required>
+            </div>
+
+            <div>
+                <label for="password">password</label>
+                <input type="password" id="password" name="password" placeholder="please enter password" value="<%=obj.password%>" required>
+            </div>
+
+            <div>
+                <label >Number Transactions</label>
+                <input name="numberTransactions" id="numberTransactions" placeholder="please enter number transactions" value="<%=obj.numberTransections%>" required>
+            </div>
+
+            <div id="error" class="text-danger" ></div>
+            <input type="submit" value="Update">
+        </form>
+
+    </body>
+</html>

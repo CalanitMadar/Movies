@@ -1,0 +1,26 @@
+<html>
+    <head>
+    </head>
+
+    <script>
+        
+    </script>
+    <body>
+        <form action="/delete" method="post">
+            <h1>Users Management</h1>
+            <% obj.forEach( function(username) {  %>
+                <input type="radio" id="radio" name="radio" value="<%=username%>"><label><%= username  %></label><br>
+            <% }) %><br>
+            <input type="submit" value="delete">
+        </form >
+
+        <a href="/userData/0">Add New</a><br>
+        <a href="/userData/1">Update</a><br>
+
+
+
+
+
+    </body>
+</html>
+

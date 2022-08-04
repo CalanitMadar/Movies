@@ -1,0 +1,30 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Search Result Page</h1>
+        <form>
+            <table border="1" id="moviesTable">
+                <tr>
+                  <th>name of movie</th>
+                  <th>Movie names that areFrom the same genre</th>
+                </tr>
+
+                <tr>
+                   <td>
+                       <% obj.lm.forEach( function(movie) {  %>
+                        <a href="/movieData/<%= movie  %>" ><li><%= movie  %> </li></a>
+                        <% }) %>
+                   </td>
+
+                   <td>
+                       <% obj.lmg.forEach( function(movie) {  %>
+                        <a href="/movieData/<%= movie  %>"><li><%= movie  %> </li></a>
+                        <% }) %>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </body>
+</html>

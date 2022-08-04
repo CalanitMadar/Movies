@@ -1,0 +1,29 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>movie data</h1>
+        <h3>id: <%=obj.id%></h3>
+        <h3>name: <%=obj.name%></h3>
+
+        <h3>genres: </h3><% obj.genres.forEach( function(genre) {  %>
+            <li><%= genre  %> </li>
+        <% }) %>
+
+        <h3>language: <%=obj.language%></h3>
+        <h3>image: </h3>
+
+        <img src=<%=obj.image%>>
+        <br>
+        <a href="">Back to Menu</a><br>
+
+        <input
+        action="action"
+        onclick="window.history.go(-3); return false;"
+        type="submit"
+        value="Back"/>
+        
+
+    </body>
+</html>
+

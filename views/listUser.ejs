@@ -1,0 +1,24 @@
+<html>
+    <head>
+    </head>
+
+    <script>
+        
+    </script>
+    <body>
+        <form action="/update" method="post">
+            <h1>List Users</h1>
+            <% obj.forEach( function(username) {  %>
+                <input type="radio" id="radio" name="radio" value="<%=username%>"><label><%= username  %></label><br>
+            <% }) %><br>
+            <input type="submit" value="Update">
+        </form >
+
+
+
+
+
+
+    </body>
+</html>
+
